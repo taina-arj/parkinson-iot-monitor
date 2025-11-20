@@ -93,17 +93,3 @@ MPU6050
 Buzzer (usando LED como indicador)
 
 Execute a simulação
-
-Fluxo da Simulação:
-text
-[Início] → [Conecta Wi-Fi] → [Conecta MQTT] → [Simula Tremores] → [Publica Alertas]
-📁 Estrutura do Projeto
-text
-parkinson-iot-monitor/
-├── parkinson_iot_monitor.ino          # Versão para hardware real
-├── parkinson_iot_monitor_WOKWI.ino    # Versão para simulação
-├── docs/
-│   ├── diagrama.fzz                   # Diagrama Fritzing
-│   ├── esquema.png                    # Imagem do esquema
-│   └── fluxograma.png                 # Fluxo de operação
-└── README.md                          # Este arquivo
