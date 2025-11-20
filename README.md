@@ -49,3 +49,60 @@ Instale via Library Manager do Arduino IDE:
 ```cpp
 const char* ssid = "SUA_REDE_WIFI";
 const char* password = "SUA_SENHA_WIFI";
+
+📡 Uso
+Execução Normal
+Conecte todos os componentes conforme o esquema
+
+Carregue o código parkinson_iot_monitor.ino no ESP32
+
+Abra o Monitor Serial (115200 baud)
+
+O sistema iniciará automaticamente
+
+Monitoramento
+Alertas Locais: Buzzer emite som ao detectar tremor
+
+Alertas Remotos: Mensagens MQTT publicadas no tópico parkinson/alerta
+
+Dados: Armazenados na EEPROM do ESP32 para análise
+
+🎮 Simulação
+Versão para Wokwi
+Para teste sem hardware físico, use o arquivo parkinson_iot_monitor_WOKWI.ino:
+
+🔗 Simular no Wokwi
+Características da Versão Simulada:
+Recurso	Versão Real	Versão Simulada
+Sensor MPU6050	Hardware real	Geração de dados simulados
+Buzzer	Som físico	LED indicador
+Wi-Fi	Conexão real	Simulação de rede
+MQTT	Broker real	Mensagens no Serial
+Como Usar a Simulação:
+Acesse Wokwi.com
+
+Crie novo projeto ESP32
+
+Cole o código do arquivo _WOKWI.ino
+
+Adicone componentes virtuais:
+
+MPU6050
+
+Buzzer (usando LED como indicador)
+
+Execute a simulação
+
+Fluxo da Simulação:
+text
+[Início] → [Conecta Wi-Fi] → [Conecta MQTT] → [Simula Tremores] → [Publica Alertas]
+📁 Estrutura do Projeto
+text
+parkinson-iot-monitor/
+├── parkinson_iot_monitor.ino          # Versão para hardware real
+├── parkinson_iot_monitor_WOKWI.ino    # Versão para simulação
+├── docs/
+│   ├── diagrama.fzz                   # Diagrama Fritzing
+│   ├── esquema.png                    # Imagem do esquema
+│   └── fluxograma.png                 # Fluxo de operação
+└── README.md                          # Este arquivo
