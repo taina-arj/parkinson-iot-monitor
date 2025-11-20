@@ -49,6 +49,7 @@ Instale via Library Manager do Arduino IDE:
 ```cpp
 const char* ssid = "SUA_REDE_WIFI";
 const char* password = "SUA_SENHA_WIFI";
+```
 
 📡 Uso
 Execução Normal
