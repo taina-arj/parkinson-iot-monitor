@@ -51,8 +51,8 @@ const char* ssid = "SUA_REDE_WIFI";
 const char* password = "SUA_SENHA_WIFI";
 ```
 
-📡 Uso
-Execução Normal
+# 📡 Uso
+## Execução Normal
 Conecte todos os componentes conforme o esquema
 
 Carregue o código parkinson_iot_monitor.ino no ESP32
@@ -68,28 +68,21 @@ Alertas Remotos: Mensagens MQTT publicadas no tópico parkinson/alerta
 
 Dados: Armazenados na EEPROM do ESP32 para análise
 
-🎮 Simulação
+## 🎮 Simulação
 Versão para Wokwi
-Para teste sem hardware físico, use o arquivo parkinson_iot_monitor_WOKWI.ino:
+Para teste sem hardware físico, use o projeto criado no Wokwi: https://wokwi.com/projects/448103182161124353
 
-🔗 Simular no Wokwi
+#### 🔗 Simular no Wokwi
 Características da Versão Simulada:
-Recurso	Versão Real	Versão Simulada
-Sensor MPU6050	Hardware real	Geração de dados simulados
-Buzzer	Som físico	LED indicador
-Wi-Fi	Conexão real	Simulação de rede
-MQTT	Broker real	Mensagens no Serial
-Como Usar a Simulação:
+
+| Recurso        | Versão Real         | Versão Simulada            |
+|----------------|----------------------|-----------------------------|
+| Sensor MPU6050 | Hardware real        | Geração de dados simulados |
+| Buzzer         | Som físico           | LED indicador               |
+| Wi-Fi          | Conexão real         | Simulação de rede           |
+| MQTT           | Broker real          | Mensagens no Serial         |
+
+
+#### Como Usar a Simulação:
 Acesse Wokwi.com
-
-Crie novo projeto ESP32
-
-Cole o código do arquivo _WOKWI.ino
-
-Adicone componentes virtuais:
-
-MPU6050
-
-Buzzer (usando LED como indicador)
-
 Execute a simulação
